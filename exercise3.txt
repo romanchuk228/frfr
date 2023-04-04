@@ -1,0 +1,37 @@
+
+// Розробіть кальулятор, використовуючи prompt() та змінні. Розробіть программу, яка виконує наступне:
+// 1. Запитує користувача про перший номер
+// 2. Зберігає цей номер
+// 3. Запитує користувача про другий номер
+// 4. Зберігає другий номер та дає відповідь з сумою двох чисел за допомогою alert()
+
+
+
+// Додатково: Зробіть програму, яка може ділити, множити, та віднімати ці два номери
+
+
+function solution(){
+    let n1 = Number(prompt("Write a first number:", '')); 
+    let character = prompt("Write a symbol (+,-,*,/):", ''); 
+    let n2 = Number(prompt("Write a second number:", '')); 
+
+    // solution
+    if (character === '*'){
+        result = n1 * n2;
+    }
+    else if (character === '+'){
+        result = n1 + n2;
+    }
+    else if (character === '-'){
+        result = n1 - n2;
+    }
+    else if (character === '/'){
+        result = n1 / n2;
+    }
+    else{
+        result = "Error! Wrong symbol or something else!";
+    }
+    return result;
+}
+
+alert(solution());
